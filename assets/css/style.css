@@ -1,0 +1,567 @@
+/* reset css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior:smooth ;
+}
+/* 
+1 vị trí
+2 kích thước
+3 màu săc
+4 hình dạng
+*/
+
+
+
+/* common */
+
+
+.text-white{
+    color:#fff !important ;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.colunm {
+    float: left;
+    padding: 0 8px;
+
+}
+
+.colunm-third {
+    width: 33.33333%;
+}
+
+.colunm-half {
+    width: 50%;
+}
+
+.colunm-full {
+    width: 100%;
+}
+
+
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+
+
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.btn{
+    background-color: #000;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block; 
+    cursor: pointer;
+    border: none;
+}
+
+.full-right {
+    float :right;
+}
+
+
+
+
+
+/* main */
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+#nav {
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none; 
+    /* xoa dau cham ben ngoai */
+}
+#nav> li{
+    display: inline-block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav li {
+   position: relative;
+}
+
+#nav> li> a {
+    color: #fff; 
+    text-transform: uppercase;
+
+}
+
+#nav li a {
+   
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+    padding: 0 24px;
+}
+
+
+#nav> li:hover> a,
+#nav .subnav  li:hover a 
+ {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 150px;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding:0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+
+#header .mobile-menu-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    font-size: 15px;
+    color:#fff;
+    line-height: 46px;
+    display: none;
+}   
+
+
+#header .mobile-menu-btn,
+#header .search-btn{
+     float:right;
+     padding:0 21px;
+}
+
+
+
+
+#header .search-icon{
+    font-size: 15px;
+    color:#fff;
+    line-height: 46px;
+    display: block;
+}
+
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000; 
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor:pointer;
+}
+
+
+#slider {
+    
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../image/img/chicago.jpg') top center/ cover no-repeat ;
+}
+ 
+#slider .text-content {
+  
+    color: white;
+    bottom: 47px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+   
+}
+
+#slider .text-heading { 
+    font-weight: 400 ;
+    font-size: 24px;
+}
+
+#slider .text-descriotion {
+    font-weight: 700 ;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+#content .content-section{
+    padding:64px 0 112px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;  
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+#content .section-heading{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    margin-top:25px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin-top:25px;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+
+#content .member-list{
+   margin-top: 16px;
+   /* overflow: hidden; */
+}
+
+
+#content .member-name{
+    font: size 15px;
+}
+
+#content .member-avatar{
+    margin-top:15px;
+    border-radius: 4px;
+    width: 154px;
+
+}
+
+
+
+/* tour-section */
+
+.tour-section {
+    background-color: #000;
+
+}
+
+.tickers-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.tickers-list li{
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom:1px solid rgb(221, 221, 221);
+    color:#757575 ;
+
+}
+
+
+
+.tickers-list .sold-out{
+  font-size: 15px;
+    background-color: #F44336;
+    padding: 1px 7px;
+    margin-left: 16px;
+}
+
+
+.tickers-list .quantity{
+
+    background-color: #000;
+    float: right;
+    width: 22px;
+    height: 22px;
+    line-height: 24px;
+    border-radius: 50%;
+    text-align: center;
+
+
+}
+
+
+
+.place-list{
+    margin-top: 16px;
+}
+
+
+
+.place-list .place-img:hover{
+    opacity: 0.6;
+
+}
+
+
+.place-list .place-img{
+    width: 100%;
+    display: block;
+
+}
+
+.place-list .place-body{
+
+    background-color: #fff;
+    padding:16px;
+
+}
+
+
+.place-list .place-heading{
+    font-size: 15px;
+    font-style: bold;
+    padding:15px 0;
+
+}
+
+
+.place-list .place-time{
+    padding:15px 0;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+
+.place-list .place-desc{
+    padding:15px 0;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.btn:hover{
+background-color: #ccc;
+color:#000;
+}
+
+
+
+
+.modal {
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0 , 0 , 0 ,0.4);
+    display: none;
+    align-items: center;
+}
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalOpen ease 0.5s;
+}
+
+
+.modal-close:hover{
+background-color: #ccc;
+
+}
+
+
+.modal-close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 36px;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+
+
+
+.modal-heading{
+    background-color: #009688;
+    height: 129px;
+    text-align: center;
+    line-height: 129px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+
+
+.modal-body{
+    padding: 0 16px;
+
+}
+
+
+.modal-label{
+    display: block;
+    margin: 16px 0;
+    font-size: 15px;
+}
+
+
+.modal-input{
+    padding: 8px;
+    border: 1px solid #000;
+    width: 100%;
+}
+#buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#buy-tickets{
+    width: 100%;
+    margin-top: 16px;
+    padding:18px;
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.modal-help{
+    padding: 31px 0;
+    text-align: right;
+}
+
+.modal-help a{
+    color: #2196F3;
+}
+
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+/* contact from */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+
+}
+
+
+.contact-form{
+    font-size: 15px;
+
+
+}
+
+.contact-form .form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* map section */
+
+.map-section img {
+    width: 100%;
+}
+
+
+
+
+
+/* footer-section */
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+    
+#footer .social-list a:hover,
+#footer .copyright :hover {
+color: rgba(0 , 0 , 0 ,0.2);
+}
+#footer .social-list a{
+    font-size: 24px;
+    color: rgba(0 , 0 , 0 ,0.6);
+    text-decoration: none;
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0 , 0 , 0 ,0.6);
+    font-size: 15px;
+}
+#footer .copyright a{
+    margin-top: 15px;
+    color: rgba(0 , 0 , 0 ,0.6);
+}

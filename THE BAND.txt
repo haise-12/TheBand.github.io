@@ -1,0 +1,16 @@
+	
+1.Phân tích--> OK
+	1.header
+		-1.nav
+		-2.seach
+	2.slider
+	3.content
+   		-1.about(giới thiệu)
+    		-2.tour
+    		-3.contact
+    		-4.image
+	4.footer
+2.Xây dựng base(nền móng)
+3.Xây dựng từng thành phần theo phân tích
+4.Hoàn thiện
+	
